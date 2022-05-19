@@ -2,17 +2,36 @@
   text-align: center;
 }
 
-.App-logo {
+.dictionarySearch h1 {
+  font-size: 2.5rem;
+}
+
+.dictionarySearch input {
+  font-size: 1.2rem;
+  border: 1px rgba(0, 0, 0, 0.283) solid;
+  padding: 0.25em;
+  border-radius: 3.5px;
+}
+
+.search-btn {
+  position: relative;
+  left: 0.5rem;
+  opacity: 0.75;
+}
+
+.search-btn:hover {
+  cursor: pointer;
+}
+
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -23,11 +42,9 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
 .App-link {
   color: #61dafb;
 }
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +52,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
