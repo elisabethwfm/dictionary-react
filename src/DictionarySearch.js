@@ -5,12 +5,16 @@ export default function DictionarySearch() {
   let [searchTerm, setSearchTerm] = useState("");
 
   function handleResponse(response) {
-    console.log(response);
+    let word = response.data[0].word;
+    let noun = response.data[0].meanings[0].partOfSpeech;
+    let verb = response.data[0].meanings[1].partOfSpeech;
+    let interjection = response.data[0].meanings[2].partOfSpeech;
+    let textAudio = response.data[0].phonetics[1];
+    // console.log(response.data[0]);
   }
 
   function search(event) {
     event.preventDefault();
-    alert(`Searching for the definition of: ${searchTerm}`);
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${searchTerm}`;
     axios.get(apiUrl).then(handleResponse);
   }
