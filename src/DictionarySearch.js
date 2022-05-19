@@ -9,7 +9,8 @@ export default function DictionarySearch() {
     let noun = response.data[0].meanings[0].partOfSpeech;
     let verb = response.data[0].meanings[1].partOfSpeech;
     let interjection = response.data[0].meanings[2].partOfSpeech;
-    let textAudio = response.data[0].phonetics[1];
+    let audio = response.data[0].phonetics[0];
+    let text = response.data[0].phonetics[2];
     // console.log(response.data[0]);
   }
 
