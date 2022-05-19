@@ -5,13 +5,25 @@ export default function DictionarySearch() {
   let [searchTerm, setSearchTerm] = useState("");
 
   function handleResponse(response) {
-    let word = response.data[0].word;
-    let noun = response.data[0].meanings[0].partOfSpeech;
-    let verb = response.data[0].meanings[1].partOfSpeech;
-    let interjection = response.data[0].meanings[2].partOfSpeech;
-    let audio = response.data[0].phonetics[0];
-    let text = response.data[0].phonetics[2];
-    // console.log(response.data[0]);
+    // let word = response.data[0].word;
+    // let defnition1 = response.data[0].meanings[0].definitions[0].definition;
+    // let defnition2 = response.data[0].meanings[0].definitions[1].definition;
+    // let defnition3 = response.data[0].meanings[0].definitions[2].definition;
+    // let example1 = response.data[0].meanings[0].definitions[0].example;
+    // let example2 = response.data[0].meanings[0].definitions[1].example;
+    // let example3 = response.data[0].meanings[0].definitions[2].example;
+    // let synonym1 = response.data[0].meanings[0].synonyms[0];
+    // let synonym2 = response.data[0].meanings[0].synonyms[1];
+    // let synonym3 = response.data[0].meanings[0].synonyms[2];
+    // let synonym1 = response.data[0].meanings[1].synonyms[0];
+    // let synonym2 = response.data[0].meanings[1].synonyms[1];
+    // let synonym3 = response.data[0].meanings[1].synonyms[2];
+    // let noun = response.data[0].meanings[0].partOfSpeech;
+    // let verb = response.data[0].meanings[1].partOfSpeech;
+    // let interjection = response.data[0].meanings[2].partOfSpeech;
+    // let audio = response.data[0].phonetics[0];
+    // let text = response.data[0].phonetics[2];
+    // console.log(response.data[0].meanings[1].synonyms[0]);
   }
 
   function search(event) {
