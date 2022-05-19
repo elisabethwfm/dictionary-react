@@ -1,5 +1,14 @@
 import React from "react";
 
 export default function Results(props) {
-  return <div className="results">Hello World!</div>;
+  if (props.results) {
+    return (
+      <div className="results">
+        <h2>Hello from results</h2>
+        <h2>{props.results.word}</h2>
+      </div>
+    );
+  } else {
+    return null;
+  }
 }

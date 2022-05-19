@@ -7,7 +7,7 @@ export default function DictionarySearch() {
   let [results, setResults] = useState("");
 
   function handleResponse(response) {
-    setResults(response.data);
+    setResults(response.data[0]);
     // let word = response.data[0].word;
     // let defnition1 = response.data[0].meanings[0].definitions[0].definition;
     // let defnition2 = response.data[0].meanings[0].definitions[1].definition;
