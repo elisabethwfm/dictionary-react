@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Results from "./Results";
 
 export default function DictionarySearch() {
   let [searchTerm, setSearchTerm] = useState("");
   let [results, setResults] = useState("");
 
   function handleResponse(response) {
+    setResults(response.data);
     // let word = response.data[0].word;
     // let defnition1 = response.data[0].meanings[0].definitions[0].definition;
     // let defnition2 = response.data[0].meanings[0].definitions[1].definition;
@@ -51,6 +53,7 @@ export default function DictionarySearch() {
           🔍
         </span>
       </form>
+      <Results results={results} />
     </div>
   );
 }
