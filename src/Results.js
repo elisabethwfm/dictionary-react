@@ -4,8 +4,9 @@ export default function Results(props) {
   if (props.results) {
     return (
       <div className="results">
-        <h2>Hello from results</h2>
-        <h2>{props.results.word}</h2>
+        <h2>
+          Word - <span className="word">{props.results.word}</span>
+        </h2>
       </div>
     );
   } else {
