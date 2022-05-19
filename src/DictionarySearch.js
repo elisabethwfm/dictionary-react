@@ -3,6 +3,7 @@ import axios from "axios";
 
 export default function DictionarySearch() {
   let [searchTerm, setSearchTerm] = useState("");
+  let [results, setResults] = useState("");
 
   function handleResponse(response) {
     // let word = response.data[0].word;
