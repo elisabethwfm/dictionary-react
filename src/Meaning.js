@@ -6,7 +6,6 @@ export default function Meaning(props) {
       <h2>
         {props.meaning.partOfSpeech}
         <br />
-        -
         <br />
       </h2>
       {props.meaning.definitions.map(function (definition, index) {
