@@ -14,7 +14,7 @@ export default function Meaning(props) {
               <strong>Example</strong> - {definition.example}
             </p>
             <br />
-            <hr width="1000" />
+            <hr width="1000" color="#58C9DB" />
             <br />
           </div>
         );
