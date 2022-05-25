@@ -3,10 +3,10 @@ import React from "react";
 export default function Example(props) {
   if (props.example) {
     return (
-      <div>
+      <span>
         <strong>Example: </strong>
         {props.example}
-      </div>
+      </span>
     );
   } else {
     return null;

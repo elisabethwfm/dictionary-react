@@ -27,6 +27,14 @@
   text-transform: capitalize;
 }
 
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
 /* .App-logo {
   height: 40vmin;
   pointer-events: none;
