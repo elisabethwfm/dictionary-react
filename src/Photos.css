@@ -1,0 +1,29 @@
+.photos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 900px;
+  background-color: black;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 5px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.individualPhoto {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 890px) {
+  .photos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .photos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
