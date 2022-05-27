@@ -29,10 +29,19 @@ export default function DictionarySearch() {
     // console.log(response.data[0].meanings[1].synonyms[0]);
   }
 
+  function handleResponsePexels(response) {
+    console.log(response);
+  }
+
   function search(event) {
     event.preventDefault();
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${searchTerm}`;
     axios.get(apiUrl).then(handleResponse);
+
+    const pexelsApiKey =
+      "563492ad6f91700001000001ea08491625914e17ac77af6d4470fad2";
+    let pexelsUrl = `https://api.pexels.com/v1/search?query=${searchTerm}&per_page=1`;
+    axios.get(pexelsUrl).then(handleResponsePexels);
   }
 
   function handleSearchTerm(event) {
