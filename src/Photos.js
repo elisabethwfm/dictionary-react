@@ -6,7 +6,11 @@ export default function Photos(props) {
     return (
       <section className="photos">
         {props.photos.map(function (photo, index) {
-          return <img src={photo.src.tiny} alt="dictPic" key="index" />;
+          return (
+            <a href={photo.src.original} target="_blank" rel="noreferrer">
+              <img src={photo.src.tiny} alt="dictPic" key="index" />
+            </a>
+          );
         })}
       </section>
     );
