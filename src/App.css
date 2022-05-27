@@ -1,5 +1,28 @@
+:root {
+  --primary-color-dark: #003646;
+  --primary-color: #007aa2;
+  --secondary-color: #8ab1c4;
+  --tertiary-color: #accfe1;
+  --vierte-color: #f1faff;
+  --accent-color-pink: #ea493f;
+  --accent-color-brown: #ac7447;
+  --accent-color-nude: #f4c7a7;
+  --accent-color-grey: #f1eef1;
+  --white-text: rgb(225, 225, 225);
+  --box-shadow: 0px 7px 9px 1px rgba(0, 0, 0, 0.53);
+  --lighter-text-color: rgb(73, 73, 73);
+  --img-background: #edf7fd5a;
+}
+
+body {
+  background-color: var(--primary-color-dark);
+}
+
 .App {
   text-align: center;
+  color: var(--white-text);
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .dictionarySearch h1 {
@@ -25,6 +48,20 @@
 
 .word {
   text-transform: capitalize;
+}
+
+.Meanings {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: var(--vierte-color);
+  color: var(--primary-color-dark);
+  margin-bottom: 20px;
+  border-radius: 3px;
+}
+
+hr {
+  border: 1px solid var(--primary-color-dark);
+  height: 30px;
 }
 
 ul {

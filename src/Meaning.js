@@ -19,7 +19,7 @@ export default function Meaning(props) {
               <Synonyms synonyms={props.meaning.synonyms} />
             </span>
             <br />
-            <hr width="1000" color="#58C9DB" />
+            <hr width="898" color="#003646" />
             <br />
           </div>
         );
