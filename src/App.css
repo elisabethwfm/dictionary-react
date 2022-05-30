@@ -1,7 +1,7 @@
 :root {
   --primary-color: rgb(181, 239, 249);
-  --link-color: rgb(56, 141, 156);
-  --primary-color-dark: rgb(8, 73, 85);
+  --link-color: rgb(119, 203, 218);
+  --primary-color-dark: rgb(8, 89, 103);
   --secondary-color: rgb(206, 247, 254);
   --tertiary-color: rgb(224, 250, 255);
   --vierte-color: #f5fbff;
@@ -91,6 +91,7 @@ li {
 a {
   text-decoration: none;
   color: var(--link-color);
+  font-weight: bold;
 }
 
 .phonetic {

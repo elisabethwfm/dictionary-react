@@ -73,7 +73,22 @@ export default function DictionarySearch() {
           >
             Elisabeth Wolfram
           </a>{" "}
-          and is <a href="">open-sourced on GitHub</a> and hosted on Netlify
+          and is{" "}
+          <a
+            href="https://github.com/elisabethwfm/dictionary-react"
+            target="_blank"
+            rel="noreferrer"
+          >
+            open-sourced on GitHub
+          </a>{" "}
+          and hosted on{" "}
+          <a
+            href="https://chipper-basbousa-b04644.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Netlify
+          </a>
         </footer>
       </div>
     );
