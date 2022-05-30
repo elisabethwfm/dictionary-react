@@ -23,16 +23,12 @@
   padding-bottom: 5px;
   padding-left: 25px;
   padding-right: 25px;
-  border-radius: 3px;
   margin-bottom: 50px;
+  margin-top: -50px;
 }
 
 .individualPhoto {
   margin-bottom: 20px;
-}
-
-img {
-  border-radius: 3px;
 }
 
 @media (max-width: 890px) {

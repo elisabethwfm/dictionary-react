@@ -50,13 +50,12 @@ body {
   text-transform: capitalize;
 }
 
-.Meanings {
+.results {
   max-width: 900px;
   margin: 0 auto;
   background-color: var(--vierte-color);
   color: var(--primary-color-dark);
   margin-bottom: 20px;
-  border-radius: 3px;
 }
 
 hr {
@@ -69,7 +68,11 @@ ul {
 }
 
 li {
-  list-style-type: none;
+  list-style-type: disc;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* .App-logo {

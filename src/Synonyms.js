@@ -10,10 +10,6 @@ export default function Synonyms(props) {
           })}
         </ul>
       </div>
-      //   <div>
-      //     <strong>Synonyms: </strong>
-      //     {props.synonyms}
-      //   </div>
     );
   } else {
     return null;
